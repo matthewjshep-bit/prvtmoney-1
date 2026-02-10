@@ -4,14 +4,14 @@ import { CheckCircle, ShieldCheck, Globe, BadgeCheck, ArrowRight } from 'lucide-
 
 const Audit: React.FC = () => {
   return (
-    <div className="pt-24 pb-32 px-6 space-y-16">
+    <div className="pt-40 pb-32 px-6 space-y-16">
       {/* Hero Section */}
       <section className="text-center space-y-4">
         <div className="inline-block px-3 py-1 rounded-full bg-primary/10 border border-primary/20">
           <span className="text-primary text-[10px] font-semibold uppercase tracking-widest">Institutional Growth Engine</span>
         </div>
         <h1 className="text-4xl font-bold tracking-tight leading-tight">
-          Audit Your <br/>
+          Audit Your <br />
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-slate-500">Wealth Ecosystem</span>
         </h1>
         <p className="text-slate-400 text-sm max-w-xs mx-auto leading-relaxed">
@@ -102,17 +102,17 @@ const Audit: React.FC = () => {
             <form className="space-y-5" onSubmit={(e) => e.preventDefault()}>
               <div className="space-y-2">
                 <label className="text-[10px] uppercase tracking-widest text-slate-500 font-semibold ml-1">Full Name</label>
-                <input 
-                  className="w-full bg-white/5 border border-white/10 rounded-lg py-3 px-4 text-sm focus:ring-2 focus:ring-primary focus:border-transparent outline-none text-white transition-all" 
-                  placeholder="Johnathan Sterling" 
+                <input
+                  className="w-full bg-white/5 border border-white/10 rounded-lg py-3 px-4 text-sm focus:ring-2 focus:ring-primary focus:border-transparent outline-none text-white transition-all"
+                  placeholder="Johnathan Sterling"
                   type="text"
                 />
               </div>
               <div className="space-y-2">
                 <label className="text-[10px] uppercase tracking-widest text-slate-500 font-semibold ml-1">Company Email</label>
-                <input 
-                  className="w-full bg-white/5 border border-white/10 rounded-lg py-3 px-4 text-sm focus:ring-2 focus:ring-primary focus:border-transparent outline-none text-white transition-all" 
-                  placeholder="j.sterling@firm.com" 
+                <input
+                  className="w-full bg-white/5 border border-white/10 rounded-lg py-3 px-4 text-sm focus:ring-2 focus:ring-primary focus:border-transparent outline-none text-white transition-all"
+                  placeholder="j.sterling@firm.com"
                   type="email"
                 />
               </div>

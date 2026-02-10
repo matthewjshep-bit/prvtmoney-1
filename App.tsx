@@ -20,17 +20,12 @@ const Nav: React.FC = () => {
 
   return (
     <>
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-xl border-b border-white/5 h-16 flex items-center justify-between px-6">
-        <div className="flex items-center gap-2">
-          <div className="w-8 h-8 bg-primary rounded flex items-center justify-center">
-            <span className="text-white font-bold text-xs">P</span>
-          </div>
-          <span className="font-bold tracking-tight text-lg uppercase italic">
-            PRVT<span className="text-primary not-italic">MONEY</span>
-          </span>
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-xl border-b border-white/5 h-32 flex items-center justify-between px-6">
+        <div className="flex items-center gap-2 pl-4">
+          <img src="/logo.png" alt="PRVT Money Logo" className="h-28 w-auto object-contain scale-[2.0] origin-left" />
         </div>
-        
-        <button 
+
+        <button
           onClick={() => setIsOpen(!isOpen)}
           className="w-10 h-10 flex items-center justify-center rounded-full bg-white/5 border border-white/10 text-slate-400 hover:text-white transition-colors"
         >
@@ -47,9 +42,8 @@ const Nav: React.FC = () => {
                 key={item.path}
                 to={item.path}
                 onClick={() => setIsOpen(false)}
-                className={`flex items-center gap-4 text-2xl font-bold p-4 rounded-xl transition-all ${
-                  location.pathname === item.path ? 'text-primary bg-primary/5' : 'text-slate-500'
-                }`}
+                className={`flex items-center gap-4 text-2xl font-bold p-4 rounded-xl transition-all ${location.pathname === item.path ? 'text-primary bg-primary/5' : 'text-slate-500'
+                  }`}
               >
                 {item.icon}
                 {item.label}
@@ -67,7 +61,7 @@ const App: React.FC = () => {
     <Router>
       <div className="min-h-screen bg-background text-slate-100 selection:bg-primary/30">
         <Nav />
-        <main className="max-w-md mx-auto min-h-screen">
+        <main className="max-w-6xl mx-auto min-h-screen">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />

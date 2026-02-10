@@ -1,12 +1,12 @@
 
 import React from 'react';
 // Fix: Added missing BarChart3 and Building imports from lucide-react
-import { LayoutDashboard, LineChart, Hub, Wallet, Layout, ChevronDown, Sparkles, AlertCircle, BarChart3, Building } from 'lucide-react';
+import { LayoutDashboard, LineChart, Wallet, Layout, ChevronDown, Sparkles, AlertCircle, BarChart3, Building } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Capabilities: React.FC = () => {
   return (
-    <div className="pt-24 pb-32 px-6 space-y-16">
+    <div className="pt-40 pb-32 px-6 space-y-16">
       {/* Hero */}
       <section className="text-center">
         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-[10px] font-bold uppercase tracking-widest mb-6">
@@ -17,8 +17,8 @@ const Capabilities: React.FC = () => {
           Now Integrated with Mid-Market API
         </div>
         <h1 className="text-4xl font-extrabold tracking-tight mb-6 leading-[1.1]">
-          The All-in-One <br/>
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-blue-400 to-white">Growth OS</span> <br/>
+          The All-in-One <br />
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-blue-400 to-white">Growth OS</span> <br />
           for Private Markets
         </h1>
         <p className="text-slate-400 text-sm leading-relaxed px-4">
@@ -44,7 +44,7 @@ const Capabilities: React.FC = () => {
           <h2 className="text-2xl font-bold mb-3">The Fragmented Stack Trap</h2>
           <p className="text-xs text-slate-500">Stop fighting your tools. Start growing your portfolio.</p>
         </div>
-        
+
         <div className="relative flex flex-col gap-8">
           {/* Fragmented View */}
           <div className="relative p-6 rounded-2xl border border-red-500/20 bg-red-500/5 overflow-hidden">

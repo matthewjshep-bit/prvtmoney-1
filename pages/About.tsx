@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 const About: React.FC = () => {
   return (
-    <div className="relative pt-24 pb-32 px-6 space-y-12">
+    <div className="relative pt-40 pb-32 px-6 space-y-12">
       {/* Background Ambient Glow */}
       <div className="fixed top-20 right-0 w-64 h-64 bg-primary/5 rounded-full blur-[100px] pointer-events-none"></div>
 
@@ -16,7 +16,7 @@ const About: React.FC = () => {
           </div>
           <span className="font-bold tracking-tighter text-xl uppercase">PRVT <span className="text-primary">Money</span></span>
         </div>
-        
+
         <div className="glass-card rounded-xl p-8 border-l-2 border-l-primary/50 shadow-xl shadow-black/20">
           <h1 className="text-3xl font-bold tracking-tight mb-4 leading-tight">
             The Growth Engine for <span className="text-primary">Mid-Market PE</span>.
@@ -76,7 +76,7 @@ const About: React.FC = () => {
               Real-time Execution
             </div>
           </div>
-          
+
           <div className="glass-card rounded-xl p-6 bg-white/5">
             <div className="flex items-center space-x-3 mb-4">
               <div className="bg-primary/10 p-2 rounded-lg text-primary">

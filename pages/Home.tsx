@@ -5,28 +5,46 @@ import { Link } from 'react-router-dom';
 
 const Home: React.FC = () => {
   return (
-    <div className="pt-24 pb-32 px-5 space-y-12">
+    <div className="pt-40 pb-32 px-5 space-y-12">
       {/* Hero Section */}
-      <header className="space-y-4">
-        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-[10px] font-semibold tracking-wider uppercase">
-          <span className="relative flex h-2 w-2">
-            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
-            <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
-          </span>
-          Institutional Growth
+      {/* Hero Section */}
+      <header className="relative space-y-4 overflow-hidden rounded-3xl p-8 md:p-12 min-h-[600px] flex flex-col justify-center">
+        {/* Background Layer */}
+        <div className="absolute inset-0 z-0">
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="w-full h-full object-cover"
+          >
+            <source src="/scene_1.mp4" type="video/mp4" />
+          </video>
+          <div className="absolute inset-0 bg-black/50" />
         </div>
-        <h1 className="text-4xl font-bold leading-tight tracking-tight">
-          The Growth Engine for <span className="text-primary">Mid-Market</span> PE.
-        </h1>
-        <p className="text-slate-400 text-lg leading-relaxed">
-          Consolidated AI-powered infrastructure for portfolio companies and high-growth SMBs.
-        </p>
+
+        {/* Content Layer */}
+        <div className="relative z-10 space-y-4">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-[10px] font-semibold tracking-wider uppercase backdrop-blur-md">
+            <span className="relative flex h-2 w-2">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+            </span>
+            Institutional Growth
+          </div>
+          <h1 className="text-4xl font-bold leading-tight tracking-tight">
+            The Growth Engine for <span className="text-primary">Commercial Real Estate Private Equity </span> PE.
+          </h1>
+          <p className="text-slate-300 text-lg leading-relaxed">
+            Consolidated AI-powered infrastructure for portfolio companies and high-growth SMBs.
+          </p>
+        </div>
       </header>
 
       {/* Core Engines */}
       <section className="space-y-4">
         <h2 className="text-[10px] font-bold uppercase tracking-[0.2em] text-slate-500 mb-2">Core Engines</h2>
-        
+
         <div className="glass-card rounded-xl p-6 flex items-start gap-4">
           <div className="w-12 h-12 shrink-0 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
             <Eye size={24} />
@@ -111,10 +129,10 @@ const Home: React.FC = () => {
 
       {/* Stats Callout */}
       <section className="relative h-64 rounded-2xl overflow-hidden glass-card p-8 flex flex-col justify-end group">
-        <img 
-          alt="Network pattern" 
-          className="absolute inset-0 w-full h-full object-cover opacity-20 mix-blend-overlay transition-transform duration-700 group-hover:scale-110" 
-          src="https://picsum.photos/seed/growth/800/600" 
+        <img
+          alt="Network pattern"
+          className="absolute inset-0 w-full h-full object-cover opacity-20 mix-blend-overlay transition-transform duration-700 group-hover:scale-110"
+          src="https://picsum.photos/seed/growth/800/600"
         />
         <div className="relative z-10 space-y-2">
           <div className="text-5xl font-bold tracking-tighter">14.2<span className="text-primary">x</span></div>
